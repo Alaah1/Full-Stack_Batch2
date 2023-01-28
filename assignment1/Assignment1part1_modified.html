@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <link rel="stylesheet" href="./style1.css">
+</head>
+<body>
+    <Form>
+        <div>
+            <table id="table1" cellspacing="5px">
+                <tr>
+                    <td>
+                        <label for="title">Title:<span style="color:red">*</span></label><br>
+                        <input type="text" name="title" id="title" size="30" required value="Astronomy for Poets" placeholder="Title">
+                    </td>
+                    <td>
+                        <label for="shtitle">Short Title:<span style="color:red">*</span></label><br>
+                        <input type="text" name="shtitle" id="shtitle" size="15" required value="Astr. for Poets" placeholder="short Title">
+                    </td>
+                    <td>
+                        <label for="subj">Subj.:</label><br>
+                        <span style="font-size: small;">BLST</span>
+                    </td>
+                    <td>
+                        <label for="num">Num.:</label><br>
+                        <input type="text" name="num" size="2" id="num" value="10">
+                    </td>
+                    <td>
+                        <label for="section">Section:</label><br>
+                        <input type="text" name="section" size="3" id="section" value="01">
+                    </td>
+                    <td>
+                        <label for="year">Year:</label><br>
+                        <span style="font-size: small">0910</span>                        
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <div>
+            <table width="100%" id="table2">
+                <tr class="row_class">
+                    <td>
+                        <input type="checkbox" name="enrollment" id="enrollment">
+                        <label for="enrollment">Enrollment limit</label>
+                    </td>
+                    <td>
+                        <label for="num"><b>Num.:</b></label><br>
+                        <input type="text" size="2px">
+                    </td>
+                    <td>
+                        <label><b>Rationale:</b></label><br>
+                        <input type="text" class="input-box">
+                    </td>
+                    <td rowspan="4" style="border:1px solid grey;">
+                        <b>Class</b><br>
+                        <label for="meetings" style="font-weight:bold;">Meetings/Week:</label><br>
+                        <input type="number" name="meetings" id="meeting" value="1" min="0" max="100"><br><br>
+                        <label for="class_hours" style="font-weight:bold;">class Hours/Week:</label><br>
+                        <input type="number" name="class_hours" id="class_hours" value="0" min="0" max="100"><br><br>
+                        <label for="semesters" style="font-weight:bold;">Semester(s) Offered</label><br>
+                        <select name="semesters" id="semesters" style="width:100px;">
+                            <option value="none" selected disabled>-none-</option>
+                        </select><br><br>
+                        <input type="checkbox" name="incl_semester" id="incl_semesters" checked>
+                        <label for="incl_semester">Incl. semester in prereqs.<label>
+                        <br><br>
+                        <input type="checkbox" name="offered_once" id="offered_once">
+                        <label for="offered_once">Offered only once<label>
+                        <br><br>
+                        <input type="checkbox" name="incl_printed" id="incl_printed">
+                        <label for="incl_printed">Incl. in printed catalog<label>
+                        <br><br>
+                    </td>
+                    <td rowspan="4">
+                        <b>Keywords:</b><br>
+                        <input type="checkbox" id="science" name="science">
+                        <label for="science">Science for non-majors</label>
+                        <br><br>
+                        <input type="checkbox" id="fine" name="fine">
+                        <label for="fine">Lab science course</label>
+                        <br><br>
+                        <input type="checkbox" id="artistic" name="artistic">
+                        <label for="artistic">Artistic practice</label>
+                        <br><br>
+                        <input type="checkbox" id="foreign" name="foreign">
+                        <label for="foreign">Forign language/culture taught in English</label>
+                        <br><br>
+                        <input type="checkbox" id="community" name="community">
+                        <label for="community">Community based learning</label>
+                        <br><br>
+                        <input type="checkbox" id="writing_attentive" name="writing_attentive">
+                        <label for="writing_attentive">Writing attentive</label>
+                        <br><br>
+                        <input type="checkbox" id="writing_intensive" name="writing_intensive">
+                        <label for="writing_intensive">Writing intensive</label>
+                        <br><br>
+                    </td>
+                </tr>
+                <tr class="row_class">
+                    <td colspan="2">
+                        <input type="checkbox" name="consent" id="consent">
+                        <label for="consent">Consent required</label>
+                    </td>
+                    <td>
+                        <label><b>Rationale:</b></label><br>
+                        <input type="text" class="input-box" size="50">
+                    </td>
+                </tr>
+                <tr class="row_class">
+                    <td>
+                        <input type="checkbox" name="limit" id="limit">
+                        <label for="enrollment">limit class level</label>
+                    </td>
+                    <td>
+                        <label for="code"><b>Code:</b></label><br>
+                        <input type="text" name="code" id="code" size="2">
+                    </td>
+                    <td>
+                        <label><b>Rationale:</b></label><br>
+                        <input type="text" class="input-box">
+                        <br>
+                        <label><b>How to handle over-enrollment:</b></label><br>
+                        <input type="text" class="input-box">
+                    </td>
+                </tr>
+                <tr class="row_class">
+                    <td colspan="2">
+                        <input type="checkbox" name="prerequisite" id="prerequisite">
+                        <label for="prerequisite">prerequisite</label>
+                    </td>
+                    <td>
+                        <label><b>Rationale:</b></label><br>
+                        <input type="text" class="input-box">
+                        <br>
+                        <label><b>Required Prereqs.(major.course):</b></label><br>
+                        <input type="text" class="input-box">
+                        <br>
+                        <label><b>Recommended Prereqs:</b></label><br>
+                        <input type="text" class="input-box">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table id="table3">
+                <tr>
+                    <td>
+                        Approvals:
+                    </td>
+                    <td class="trans-cell"></td>
+                    <td>
+                        Date:
+                    </td>
+                    <td class="trans-cell"></td>
+                    <td>
+                        Comments:
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="CEP" id="CEP"><label for="CEP">CEP</label></td>
+                    <td class="trans-cell"></td>
+                    <td style="border-top: 3px solid grey; width:350px;background-color: rgb(240, 233, 233);"><img src="./resources/arrow1.png"><input type="text" size="40"></td>
+                    <td class="trans-cell"></td>
+                    <td style="border-top: 3px solid grey; width:750px;background-color: rgb(240, 233, 233);"><img src="./resources/arrow1.png"><input type="text" size="103"></td>
+                </tr>
+                <tr>
+                        <td><input type="checkbox" name="Committee" id="Committee"><label for="Committee">Committee of six</label></td>
+                        <td class="trans-cell"></td>
+                        <td style="border-top: 1px solid grey; width:350px;background-color: lightgray"><img src="./resources/arrow1.png"><input type="text" size="40"></td>
+                        <td class="trans-cell"></td>
+                        <td style="border-top: 1px solid grey; width:750px;background-color: lightgray"><img src="./resources/arrow1.png"><input type="text" size="103"></td>
+                </tr>
+                <tr>
+                        <td><input type="checkbox" name="Faculty" id="Faculty"><label for="Faculty">Faculty</label></td>
+                        <td class="trans-cell"></td>
+                        <td style="border-top: 1px solid grey; width:350px;background-color: rgb(240, 233, 233);"><img src="./resources/arrow1.png"><input type="text" size="40"></td>
+                        <td class="trans-cell"></td>
+                        <td style="border-top: 1px solid grey; width:750px;background-color: rgb(240, 233, 233);"><img src="./resources/arrow1.png"><input type="text" size="103"></td>
+                </tr>
+            </table>
+        </div>
+    </Form>
+</body>
+</html>

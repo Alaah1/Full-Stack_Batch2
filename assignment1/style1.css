@@ -1,0 +1,51 @@
+#table1 label{
+    font-weight: bold;
+}
+        
+.row_class{
+    border: 1px solid grey;
+    border-left:none;
+    border-right: none;
+}
+
+td{
+    vertical-align: top;
+}
+
+table{
+    border-collapse: collapse;
+}
+        
+tr.row_class:nth-child(odd){
+    background-color: rgb(240, 233, 233);
+}
+        
+tr.row_class:nth-child(even){
+    background-color: lightgrey;
+}
+
+#table1{
+    border-collapse:separate;
+}
+
+.input-box{
+    width:95%;
+}
+
+.trans-cell{
+    width:15px;
+}
+
+#table3 img{
+    height:100%;
+    width: 10px;
+    margin:0px 5px 0px 5px;
+}
+
+#table3 td{
+    vertical-align: middle;
+}
+
+#table3 input[type="text"]{
+    display: inline;
+}
